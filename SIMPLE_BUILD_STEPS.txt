@@ -1,0 +1,67 @@
+📱 DaysSinceWeMet - SIMPLE APK BUILD STEPS
+============================================
+
+🥇 EASIEST METHOD: WSL (10 minutes total)
+
+STEP 1: Install WSL (if not already installed)
+---------------------------------------------
+1. Open PowerShell as Administrator
+2. Run: wsl --install
+3. Restart computer if prompted
+4. Install Ubuntu from Microsoft Store
+
+STEP 2: Copy files to WSL
+-------------------------
+1. Open Ubuntu (WSL) terminal
+2. Run these commands one by one:
+
+   sudo apt update
+   sudo apt install -y python3-pip git openjdk-11-jdk
+   pip3 install buildozer
+
+STEP 3: Navigate to your app folder
+----------------------------------
+   cd /mnt/f/Projects/App/AndroidApp
+
+STEP 4: Build APK
+-----------------
+   buildozer android debug
+
+STEP 5: Get your APK
+-------------------
+Your APK will be in: bin/DaysSinceWeMet-1.0-debug.apk
+
+Transfer to your Android device and install!
+
+============================================
+🥈 ALTERNATIVE: GitHub Actions (No local setup)
+
+1. Create GitHub account
+2. Create new repository
+3. Upload all files from this folder
+4. Go to Actions tab → Build Android APK
+5. Download APK from artifacts
+
+============================================
+📋 WHAT YOUR APP DOES:
+
+✅ Tracks days since a special date
+✅ Shows real-time updates (days, hours, years)
+✅ Clean, simple interface
+✅ No internet required
+✅ Saves your date locally
+✅ Completely private
+
+The app is READY and TESTED on Windows!
+Just needs Linux environment to build the APK.
+
+============================================
+📱 INSTALLATION ON ANDROID:
+
+1. Enable "Unknown sources" in Android settings
+2. Transfer APK to phone
+3. Tap APK file to install
+4. Open app and enter your special date
+5. Enjoy tracking your milestone!
+
+============================================
